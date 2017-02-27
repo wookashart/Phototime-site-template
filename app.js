@@ -3,30 +3,6 @@ $('#hamburger').on('click', function(){
     $('nav').toggleClass('down');
 })
 
-// $('#go-home').on('click', function(){
-//     $("html, body").animate({ scrollTop: 0}, 1000);
-//     $('nav').removeClass('down');
-//     $('#hamburger').removeClass('open');
-// });
-
-// $('#go-photoapp').on('click', function(){
-//     $("html, body").animate({ scrollTop: $('.rappresent').offset().top - 200}, 1000);
-//     $('nav').removeClass('down');
-//     $('#hamburger').removeClass('open');
-// });
-
-// $('#go-design').on('click', function(){
-//     $("html, body").animate({ scrollTop: $('.design').offset().top}, 1000);
-//     $('nav').removeClass('down');
-//     $('#hamburger').removeClass('open');
-// });
-
-// $('#go-download').on('click', function(){
-//     $("html, body").animate({ scrollTop: $('.download').offset().top}, 1000);
-//     $('nav').removeClass('down');
-//     $('#hamburger').removeClass('open');
-// });
-
 $('.nav-button').on('click', function(){
     var target = $(this).data('target');
     $("html, body").animate({ scrollTop: $(target).offset().top}, 1000);
