@@ -1,0 +1,56 @@
+section.rappresent {
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/gallery/iPhone.png');
+    background-repeat: no-repeat;
+    background-position-x: 509px;
+
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+    }
+
+    .rappresent-text {   
+        padding: 0 50px;
+        margin-top: 91px;
+
+        @media screen and (min-width: 600px){
+            padding: 0 129px;
+        }
+
+        .rapp-h2 {
+            color: $text-green;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: gotham_bold;
+            letter-spacing: 2.7px;
+            width: 100%;
+            padding-top: 18px;
+
+            @media screen and (min-width: 1000px){
+                width: 38%
+            }
+        }
+
+        p.rapp-p {
+            color: $text-dark;
+            font-family: gotham_book;
+            font-size: 13px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            width: 100%;
+            margin-top: 39px;
+            
+            @media screen and (min-width: 1000px){
+                width: 42%
+            }
+        }
+
+        .rapp-button {
+            margin-top: 29px;
+            width: 192px;
+            padding-top: 5px;
+            margin-bottom: 91px;
+        }
+    }
+}

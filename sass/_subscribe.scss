@@ -1,0 +1,49 @@
+section.subscribe {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: url('../img/gallery/background_subscribe.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 324px;
+    margin-top: 99px;
+
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+    }
+
+    .subscribe-h1 {
+        color: $text-light;
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    .submit {
+        padding-bottom: 326px;
+
+        input.submit-email {
+            width: 282px;
+            margin-top: 8px;
+            height: 60px;
+            border-radius: 5px 0 0 5px;
+            margin-right: -4px;
+            border: none;
+            font-size: 17px;
+            padding-left: 21px;
+            letter-spacing: 2px;
+            padding-top: 7px;
+            color: $text-dark;
+        }
+
+        input.submit-button {
+            width: 63px;
+            height: 60px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: $button-background;
+            color: $text-light;
+            font-size: 30px;
+            padding-bottom: 9px;
+        }
+    }
+}

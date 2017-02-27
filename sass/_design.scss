@@ -1,0 +1,112 @@
+section.design {
+    width: 100%;
+    margin: auto;
+    padding: 0 50px;
+
+    @media screen and (min-width: 600px){
+        padding: 0 129px;
+    }
+
+    @media screen and (min-width: 767px){
+        padding: inherit;
+    }
+
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+    }
+
+    div.design-conteiner {
+        overflow: hidden;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            transition: all 1s;
+            display: flex;
+            flex-direction: row;
+
+            li {
+                width: 100%;
+            }
+
+            .design-text {
+                width: 95%;
+                padding-top: 1px;
+                display: flex;
+                flex-direction: column;
+                background-repeat: no-repeat;
+                margin-top: 146px;
+                background-position-x: 123px;
+                padding-left: 0;
+
+                @media screen and (min-width: 767px){
+                    padding-left: 60%;
+                    // margin: auto;
+                }
+
+                h2.design-h2 {
+                    margin-top: -5px;
+                }
+
+                p.design-p {
+                    margin-top: 17px;
+                    margin-bottom: 38px;
+                    color: $text-dark;
+                }
+
+                button.design-button {
+                    margin-left: 2px;
+                    width: 193px;
+                }
+
+                p.design-number {
+                    margin-top: 42px;
+                    font-family: gotham_bold;
+                    font-size: 15px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .iphone-blue {
+                background-image: none;
+
+                @media screen and (min-width: 767px){
+                    background-image: url('../img/gallery/iPhone_blue.png');  
+                }
+            }
+
+            .iphone-green {
+                background-image: none;
+
+                @media screen and (min-width: 767px){
+                    background-image: url('../img/gallery/iPhone_green.png');
+                }
+            }
+
+            .iphone-yellow {
+                background-image: none;
+
+                @media screen and (min-width: 767px){
+                    background-image: url('../img/gallery/iPhone_yellow.png');  
+                }
+            }
+
+            .iphone-red {
+                background-image: none;
+
+                @media screen and (min-width: 767px){
+                    background-image: url('../img/gallery/iPhone_red.png');
+                }
+            }
+
+            .iphone-white {
+                background-image: none;
+
+                @media screen and (min-width: 767px){
+                    background-image: url('../img/gallery/iPhone_white.png');
+                }
+            }
+        }
+    }
+}

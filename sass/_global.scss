@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'gotham_bold';
+    src: url('../fonts/GothamRoundedBold_21016.ttf');
+}
+
+@font-face {
+    font-family: 'gotham_medium';
+    src: url('../fonts/GothamRoundedMedium_21022.ttf');
+}
+
+@font-face {
+    font-family: 'gotham_book';
+    src: url('../fonts/GothamRoundedBook_21018.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+

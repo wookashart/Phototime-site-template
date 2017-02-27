@@ -1,0 +1,43 @@
+footer {
+    width: 100%;
+    margin: auto;
+    padding: 29px 127px;
+
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+    }
+
+    .footer-nav {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: gotham_bold;
+        font-size: 15px;
+        letter-spacing: 1.1px;
+        color: $text-dark;
+        margin-right: 5px;
+    }
+
+    .footer-nav-break {
+        display: inline-block;
+        color: $text-green;
+        margin-right: 6px;
+        font-weight: bold;
+    }
+
+    .copyright {
+        font-family: gotham_bold;
+        font-size: 14px;
+        letter-spacing: 2.1px;
+        margin-top: 2px;
+    }
+
+    .footer-camera {
+        margin-left: 94.5%;
+        margin-top: -57px;
+        display: none;
+
+        @media screen and (min-width: 700px){
+            display: block; 
+        }
+    }
+}

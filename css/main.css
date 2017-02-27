@@ -1,0 +1,497 @@
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'gotham_bold';
+  src: url("../fonts/GothamRoundedBold_21016.ttf"); }
+
+@font-face {
+  font-family: 'gotham_medium';
+  src: url("../fonts/GothamRoundedMedium_21022.ttf"); }
+
+@font-face {
+  font-family: 'gotham_book';
+  src: url("../fonts/GothamRoundedBook_21018.ttf"); }
+
+body, html {
+  margin: 0;
+  padding: 0; }
+
+button.button {
+  text-align: center;
+  width: 166px;
+  height: 49px;
+  background-color: #16a085;
+  box-shadow: none;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: gotham_bold;
+  font-size: 11px;
+  letter-spacing: 2px; }
+
+div.arrow-buttons {
+  margin-left: -6px;
+  padding-bottom: 69px; }
+  div.arrow-buttons .button-arrow {
+    font-size: 27px;
+    border: none;
+    background: transparent;
+    font-weight: bold; }
+
+header {
+  background-image: url("../img/gallery/background_home.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 40px; }
+  header nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    padding-bottom: 25px;
+    transition-duration: 300ms;
+    height: 0;
+    overflow: hidden;
+    right: 0;
+    text-align: right; }
+    @media screen and (min-width: 767px) {
+      header nav {
+        flex-direction: row;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        overflow: visible;
+        right: inherit;
+        height: 80px; } }
+    header nav div.nav-background {
+      background-color: black; }
+    header nav a.nav-button {
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: gotham_bold;
+      margin: 0 30px;
+      letter-spacing: 2px;
+      padding-top: 30px; }
+    header nav img.nav-img {
+      padding-left: 15px;
+      margin: 0 61px;
+      display: none; }
+      @media screen and (min-width: 767px) {
+        header nav img.nav-img {
+          display: inherit; } }
+  header h1.header-h1 {
+    text-align: center;
+    margin-top: 292px;
+    color: #ffffff;
+    font-family: gotham_bold;
+    font-size: 37px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 6px;
+    margin-bottom: 0px; }
+  header p.under-header {
+    text-align: center;
+    color: #ffffff;
+    font-family: gotham_medium;
+    letter-spacing: 2.4px;
+    font-size: 16px;
+    margin-top: 7px; }
+  header button.started-button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 9px; }
+  header div.home-icons {
+    text-align: center;
+    margin-top: 170px;
+    padding-bottom: 23px; }
+    @media screen and (min-width: 350px) {
+      header div.home-icons {
+        margin-top: 190px; } }
+    @media screen and (min-width: 533px) {
+      header div.home-icons {
+        margin-top: 220px; } }
+    header div.home-icons a.href-icons {
+      padding: 0 6px; }
+  header .down {
+    padding-bottom: 220px; }
+    @media screen and (min-width: 767px) {
+      header .down {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 36px;
+        margin-right: 30px;
+        transition-duration: 10ms; } }
+
+.scrolled {
+  background: #16a085;
+  width: 100%;
+  top: 0;
+  padding-top: 60px; }
+  @media screen and (min-width: 767px) {
+    .scrolled {
+      width: 1280px;
+      justify-content: center;
+      padding-top: 0; } }
+
+div.hamburger-style {
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  right: 20px;
+  margin: 5px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+  top: 16px; }
+  div.hamburger-style span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out; }
+  div.hamburger-style span:nth-child(1) {
+    top: 7px;
+    bottom: 10px; }
+  div.hamburger-style span:nth-child(2) {
+    top: 18px; }
+  div.hamburger-style span:nth-child(3) {
+    top: 29px; }
+  @media screen and (min-width: 767px) {
+    div.hamburger-style {
+      display: none; } }
+
+#hamburger.open span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg); }
+
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: 60px; }
+
+#hamburger.open span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg); }
+
+section.rappresent {
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/gallery/iPhone.png");
+  background-repeat: no-repeat;
+  background-position-x: 509px; }
+  @media screen and (min-width: 1280px) {
+    section.rappresent {
+      width: 1280px; } }
+  section.rappresent .rappresent-text {
+    padding: 0 50px;
+    margin-top: 91px; }
+    @media screen and (min-width: 600px) {
+      section.rappresent .rappresent-text {
+        padding: 0 129px; } }
+    section.rappresent .rappresent-text .rapp-h2 {
+      color: #16a085;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: gotham_bold;
+      letter-spacing: 2.7px;
+      width: 100%;
+      padding-top: 18px; }
+      @media screen and (min-width: 1000px) {
+        section.rappresent .rappresent-text .rapp-h2 {
+          width: 38%; } }
+    section.rappresent .rappresent-text p.rapp-p {
+      color: #373737;
+      font-family: gotham_book;
+      font-size: 13px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      width: 100%;
+      margin-top: 39px; }
+      @media screen and (min-width: 1000px) {
+        section.rappresent .rappresent-text p.rapp-p {
+          width: 42%; } }
+    section.rappresent .rappresent-text .rapp-button {
+      margin-top: 29px;
+      width: 192px;
+      padding-top: 5px;
+      margin-bottom: 91px; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-family: gotham_bold;
+  color: #16a085;
+  letter-spacing: 2px; }
+
+p.under-h2 {
+  font-family: gotham_book;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 22px; }
+
+section.design {
+  width: 100%;
+  margin: auto;
+  padding: 0 50px; }
+  @media screen and (min-width: 600px) {
+    section.design {
+      padding: 0 129px; } }
+  @media screen and (min-width: 767px) {
+    section.design {
+      padding: inherit; } }
+  @media screen and (min-width: 1280px) {
+    section.design {
+      width: 1280px; } }
+  section.design div.design-conteiner {
+    overflow: hidden; }
+    section.design div.design-conteiner ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      transition: all 1s;
+      display: flex;
+      flex-direction: row; }
+      section.design div.design-conteiner ul li {
+        width: 100%; }
+      section.design div.design-conteiner ul .design-text {
+        width: 95%;
+        padding-top: 1px;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        margin-top: 146px;
+        background-position-x: 123px;
+        padding-left: 0; }
+        @media screen and (min-width: 767px) {
+          section.design div.design-conteiner ul .design-text {
+            padding-left: 60%; } }
+        section.design div.design-conteiner ul .design-text h2.design-h2 {
+          margin-top: -5px; }
+        section.design div.design-conteiner ul .design-text p.design-p {
+          margin-top: 17px;
+          margin-bottom: 38px;
+          color: #373737; }
+        section.design div.design-conteiner ul .design-text button.design-button {
+          margin-left: 2px;
+          width: 193px; }
+        section.design div.design-conteiner ul .design-text p.design-number {
+          margin-top: 42px;
+          font-family: gotham_bold;
+          font-size: 15px;
+          margin-bottom: 0; }
+      section.design div.design-conteiner ul .iphone-blue {
+        background-image: none; }
+        @media screen and (min-width: 767px) {
+          section.design div.design-conteiner ul .iphone-blue {
+            background-image: url("../img/gallery/iPhone_blue.png"); } }
+      section.design div.design-conteiner ul .iphone-green {
+        background-image: none; }
+        @media screen and (min-width: 767px) {
+          section.design div.design-conteiner ul .iphone-green {
+            background-image: url("../img/gallery/iPhone_green.png"); } }
+      section.design div.design-conteiner ul .iphone-yellow {
+        background-image: none; }
+        @media screen and (min-width: 767px) {
+          section.design div.design-conteiner ul .iphone-yellow {
+            background-image: url("../img/gallery/iPhone_yellow.png"); } }
+      section.design div.design-conteiner ul .iphone-red {
+        background-image: none; }
+        @media screen and (min-width: 767px) {
+          section.design div.design-conteiner ul .iphone-red {
+            background-image: url("../img/gallery/iPhone_red.png"); } }
+      section.design div.design-conteiner ul .iphone-white {
+        background-image: none; }
+        @media screen and (min-width: 767px) {
+          section.design div.design-conteiner ul .iphone-white {
+            background-image: url("../img/gallery/iPhone_white.png"); } }
+
+section.community {
+  width: 100%;
+  margin: auto;
+  margin-top: 90px; }
+  @media screen and (min-width: 1280px) {
+    section.community {
+      width: 1280px; } }
+  section.community .community-arrows {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 120px;
+    padding-bottom: 0px; }
+  section.community .community-conteiner {
+    display: flex;
+    padding: 0 51px;
+    flex-direction: column; }
+    @media screen and (min-width: 767px) {
+      section.community .community-conteiner {
+        flex-direction: row; } }
+    section.community .community-conteiner .community-text {
+      text-align: center;
+      padding-top: 43px;
+      color: #373737; }
+      section.community .community-conteiner .community-text .community-h3 {
+        text-transform: uppercase;
+        font-family: gotham_bold;
+        font-size: 19px;
+        padding-top: 3px;
+        margin-bottom: 17px; }
+      section.community .community-conteiner .community-text .community-under-h3 {
+        width: 40%;
+        margin: auto;
+        font-family: gotham_book;
+        font-size: 10px;
+        letter-spacing: 1px; }
+    section.community .community-conteiner .community-gallery {
+      margin: auto;
+      padding-left: 4px; }
+      @media screen and (min-width: 767px) {
+        section.community .community-conteiner .community-gallery {
+          margin-top: -17px; } }
+      section.community .community-conteiner .community-gallery ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        flex-direction: column; }
+        @media screen and (min-width: 767px) {
+          section.community .community-conteiner .community-gallery ul {
+            flex-direction: row; } }
+      section.community .community-conteiner .community-gallery li {
+        padding-right: 24px; }
+
+section.subscribe {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-image: url("../img/gallery/background_subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 324px;
+  margin-top: 99px; }
+  @media screen and (min-width: 1280px) {
+    section.subscribe {
+      width: 1280px; } }
+  section.subscribe .subscribe-h1 {
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 3px; }
+  section.subscribe .submit {
+    padding-bottom: 326px; }
+    section.subscribe .submit input.submit-email {
+      width: 282px;
+      margin-top: 8px;
+      height: 60px;
+      border-radius: 5px 0 0 5px;
+      margin-right: -4px;
+      border: none;
+      font-size: 17px;
+      padding-left: 21px;
+      letter-spacing: 2px;
+      padding-top: 7px;
+      color: #373737; }
+    section.subscribe .submit input.submit-button {
+      width: 63px;
+      height: 60px;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      background-color: #16a085;
+      color: #ffffff;
+      font-size: 30px;
+      padding-bottom: 9px; }
+
+section.download {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 72px;
+  padding-bottom: 115px;
+  background-image: url("../img/gallery/background_download.jpg"); }
+  @media screen and (min-width: 1280px) {
+    section.download {
+      width: 1280px; } }
+  section.download .download-h2 {
+    letter-spacing: 4px;
+    color: #373737;
+    margin-bottom: 0; }
+  section.download .download-under-h2 {
+    font-family: gotham_bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-top: 5px;
+    padding: 0px 50px;
+    letter-spacing: 3px;
+    line-height: 23px; }
+    @media screen and (min-width: 500px) {
+      section.download .download-under-h2 {
+        padding: 0px 100px; } }
+    @media screen and (min-width: 767px) {
+      section.download .download-under-h2 {
+        padding: 0px 191px; } }
+  section.download .download-buttons {
+    margin-top: 39px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 767px) {
+      section.download .download-buttons {
+        flex-direction: row; } }
+    section.download .download-buttons .button-download {
+      width: 296px;
+      height: 56px;
+      margin: 0 13px;
+      display: flex;
+      margin-bottom: 20px; }
+      section.download .download-buttons .button-download .button-download-p {
+        padding-left: 17px;
+        font-size: 16px;
+        letter-spacing: 2.4px;
+        padding-top: 4px; }
+      section.download .download-buttons .button-download .button-download-icon {
+        margin-left: auto;
+        padding-top: 15px;
+        background-color: #107360;
+        width: 56px;
+        height: 55px;
+        margin-right: -5px;
+        border-radius: 0 4px 4px 0; }
+
+footer {
+  width: 100%;
+  margin: auto;
+  padding: 29px 127px; }
+  @media screen and (min-width: 1280px) {
+    footer {
+      width: 1280px; } }
+  footer .footer-nav {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: gotham_bold;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    color: #373737;
+    margin-right: 5px; }
+  footer .footer-nav-break {
+    display: inline-block;
+    color: #16a085;
+    margin-right: 6px;
+    font-weight: bold; }
+  footer .copyright {
+    font-family: gotham_bold;
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    margin-top: 2px; }
+  footer .footer-camera {
+    margin-left: 94.5%;
+    margin-top: -57px;
+    display: none; }
+    @media screen and (min-width: 700px) {
+      footer .footer-camera {
+        display: block; } }

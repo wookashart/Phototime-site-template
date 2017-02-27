@@ -1,0 +1,72 @@
+section.community {
+    width: 100%;
+    margin: auto;
+    margin-top: 90px;
+
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+    }
+
+    .community-arrows {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 120px;
+        padding-bottom: 0px;
+    }
+
+    .community-conteiner {
+        display: flex;
+        padding: 0 51px;
+        flex-direction: column;
+
+        @media screen and (min-width: 767px){
+            flex-direction: row;
+        }
+
+        .community-text {
+            text-align: center;
+            padding-top: 43px;
+            color: $text-dark;
+
+            .community-h3 {
+                text-transform: uppercase;
+                font-family: gotham_bold;
+                font-size: 19px;
+                padding-top: 3px;
+                margin-bottom: 17px;
+            }
+
+            .community-under-h3 {
+                width: 40%;
+                margin: auto;
+                font-family: gotham_book;
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .community-gallery {
+            margin: auto;
+            padding-left: 4px;
+
+            @media screen and (min-width: 767px){
+                margin-top: -17px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
+                flex-direction: column;
+
+                @media screen and (min-width: 767px){
+                    flex-direction: row;
+                }
+            }
+
+            li {
+                padding-right: 24px;
+            }
+        }
+    }
+}

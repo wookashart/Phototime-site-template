@@ -1,0 +1,26 @@
+button.button {
+    text-align: center;
+    width: 166px;
+    height: 49px;
+    background-color: $button-background;
+    box-shadow: none;
+    border: none;
+    color: $text-light;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: gotham_bold;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+div.arrow-buttons {
+    margin-left: -6px;
+    padding-bottom: 69px;
+
+    .button-arrow {
+        font-size: 27px;
+        border: none;
+        background: transparent;
+        font-weight: bold;
+    }
+}

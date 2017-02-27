@@ -1,0 +1,124 @@
+header {
+    background-image: url('../img/gallery/background_home.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 40px;
+
+    nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        padding-bottom: 25px;
+        transition-duration: 300ms;
+        height: 0;
+        overflow: hidden;
+        right: 0;
+        text-align: right;
+
+        @media screen and (min-width: 767px) {
+            flex-direction: row;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            overflow: visible;
+            right: inherit;
+            height: 80px;
+        }
+
+        div.nav-background {
+            background-color: black;
+        }
+
+        a.nav-button {
+            text-transform: uppercase;
+            color: $text-light;
+            text-decoration: none;
+            font-family: gotham_bold;
+            margin: 0 30px;
+            letter-spacing: 2px;
+            padding-top: 30px;
+        }
+
+        img.nav-img {
+            padding-left: 15px;
+            margin: 0 61px;
+            display: none;
+
+            @media screen and (min-width: 767px){
+                display: inherit;
+            }
+        }
+    }
+
+    h1.header-h1 {
+        text-align: center;
+        margin-top: 292px;
+        color: $text-light;
+        font-family: gotham_bold;
+        font-size: 37px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-left: 6px;
+        margin-bottom: 0px;
+    }
+
+    p.under-header {
+        text-align: center;
+        color: $text-light;
+        font-family: gotham_medium;
+        letter-spacing: 2.4px;
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    button.started-button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 9px;
+    }
+
+    div.home-icons {
+        text-align: center;
+        margin-top: 170px;
+        padding-bottom: 23px;
+
+        @media screen and (min-width: 350px){
+            margin-top: 190px;
+        }
+
+        @media screen and (min-width: 533px){
+            margin-top: 220px;
+        }
+
+        a.href-icons {
+            padding: 0 6px;
+        }
+    }   
+
+    .down {
+        padding-bottom: 220px;
+
+        @media screen and (min-width: 767px){
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 36px;
+            margin-right: 30px;
+            transition-duration: 10ms;
+            }
+    }
+}
+
+.scrolled {
+    background: $button-background;
+    width: 100%;
+    top: 0;
+    padding-top: 60px;
+    
+
+    @media screen and (min-width: 767px){
+        width: 1280px;
+        justify-content: center;
+        padding-top: 0;
+    }
+}

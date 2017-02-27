@@ -1,0 +1,73 @@
+section.download {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 72px;
+    padding-bottom: 115px;
+    background-image: url('../img/gallery/background_download.jpg');
+
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+    }
+
+    .download-h2 {
+        letter-spacing: 4px;
+        color: $text-dark;
+        margin-bottom: 0;
+    }
+
+    .download-under-h2 {
+        font-family: gotham_bold;
+        text-transform: uppercase;
+        font-size: 11px;
+        margin-top: 5px;
+        padding: 0px 50px;
+        letter-spacing: 3px;
+        line-height: 23px;
+
+        @media screen and (min-width: 500px){
+            padding: 0px 100px;
+        }
+
+        @media screen and (min-width: 767px){
+            padding: 0px 191px;
+        }
+    }
+
+    .download-buttons {
+        margin-top: 39px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 767px){
+            flex-direction: row;
+        }
+
+        .button-download {
+            width: 296px;
+            height: 56px;
+            margin: 0 13px;
+            display: flex;
+            margin-bottom: 20px;
+
+            .button-download-p {
+                padding-left: 17px;
+                font-size: 16px;
+                letter-spacing: 2.4px;
+                padding-top: 4px;
+            }
+
+            .button-download-icon {
+                margin-left: auto;
+                padding-top: 15px;
+                background-color: darken($button-background, 10%);
+                width: 56px;
+                height: 55px;
+                margin-right: -5px;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+}

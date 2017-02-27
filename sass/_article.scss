@@ -1,0 +1,14 @@
+h2 {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: gotham_bold;
+    color: $text-green;
+    letter-spacing: 2px;
+}
+
+p.under-h2 {
+    font-family: gotham_book;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
